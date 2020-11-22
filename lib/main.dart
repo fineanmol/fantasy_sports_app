@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           });
 
     _positionController = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 1000));
+        vsync: this, duration: Duration(milliseconds: 100));
 
     _positionAnimation =
         Tween<double>(begin: 0.0, end: 215.0).animate(_positionController)
@@ -138,26 +138,29 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  SizedBox(
+                    height: 420,
+                  ),
                   FadeAnimation(
                       1,
                       Text(
-                        "Welcome",
+                        "CricketAdda",
                         style: TextStyle(color: Colors.white, fontSize: 50),
                       )),
                   SizedBox(
-                    height: 15,
+                    height: 10,
                   ),
                   FadeAnimation(
                       1.3,
                       Text(
-                        "We promise that you'll have the most \nfuss-free time with us ever.",
+                        "Best Fantasy App.",
                         style: TextStyle(
                             color: Colors.white.withOpacity(.7),
                             height: 1.4,
-                            fontSize: 20),
+                            fontSize: 0),
                       )),
                   SizedBox(
-                    height: 180,
+                    height: 10,
                   ),
                   FadeAnimation(
                       1.6,
@@ -196,7 +199,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                                       decoration: BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
-                                                          color: Colors.blue),
+                                                          color:
+                                                              Colors.blue[200]),
                                                       child: hideIcon == false
                                                           ? Icon(
                                                               Icons

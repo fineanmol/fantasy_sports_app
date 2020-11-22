@@ -37,12 +37,13 @@ class LoginPage extends StatelessWidget {
                         decoration: BoxDecoration(
                             border: Border(
                                 bottom: BorderSide(color: Colors.grey[300]))),
-                        child: TextField(
+                        child: TextFormField(
                           decoration: InputDecoration(
                               border: InputBorder.none,
+                              labelText: "Phone number",
                               hintStyle:
                                   TextStyle(color: Colors.grey.withOpacity(.8)),
-                              hintText: "Email or Phone number"),
+                              hintText: "Phone number"),
                         ),
                       ),
                       Container(
