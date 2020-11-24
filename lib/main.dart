@@ -2,9 +2,8 @@ import 'package:fantasy_Sports_App/pages/firstPage.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'Animations/FadeAnimation.dart';
-import 'LoginPage.dart';
 
-const AssetImage splashImage = AssetImage('assets/images/splash4.jpg');
+const AssetImage splashImage = AssetImage('assets/images/splash2.jpg');
 bool statusAnimation;
 
 void main() =>
@@ -54,8 +53,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             }
           });
 
-    _positionController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 100));
+    _positionController = AnimationController(
+        vsync: this, duration: Duration(milliseconds: 1000));
 
     _positionAnimation =
         Tween<double>(begin: 0.0, end: 215.0).animate(_positionController)
@@ -185,12 +184,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                                       child: Container(
                                                         width: 60,
                                                         height: 60,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                                shape: BoxShape
-                                                                    .circle,
-                                                                color: Colors
-                                                                    .blue[200]),
+                                                        decoration: BoxDecoration(
+                                                            shape:
+                                                                BoxShape.circle,
+                                                            color: Colors
+                                                                .transparent),
                                                         child: hideIcon == false
                                                             ? Icon(
                                                                 Icons

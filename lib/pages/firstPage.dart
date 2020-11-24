@@ -1,4 +1,3 @@
-import 'package:fantasy_Sports_App/Animations/FadeAnimation.dart';
 import 'package:fantasy_Sports_App/LoginPage.dart';
 import 'package:flutter/material.dart';
 
